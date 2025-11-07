@@ -10,7 +10,7 @@ from Crypto.Hash import SHA256
 from Crypto.Random import get_random_bytes
 import os
 
-OUTFILE = "fixed_email_aesgcm.bin"
+OUTFILE = "fixed/fixed_email_aesgcm.bin"
 KDF_SALT_BYTES = 16
 AES_GCM_NONCE_BYTES = 12
 AES_KEY_BYTES = 32
