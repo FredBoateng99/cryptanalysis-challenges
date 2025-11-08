@@ -1,0 +1,4 @@
+
+# ignore generated hex/key files
+reused_key.hex
+ciphertext*.hex
