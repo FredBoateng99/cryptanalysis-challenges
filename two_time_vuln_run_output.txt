@@ -1,0 +1,3 @@
+vulnerable: Wrote ciphertext1.hex .. ciphertext4.hex and reused_key.hex (for demo only).
+vulnerable: ciphertext lengths: [120, 120, 120, 120]
+run_vulnerable returned: {'cts_lengths': [120, 120, 120, 120]}

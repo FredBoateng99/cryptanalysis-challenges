@@ -1,0 +1,2 @@
+=== AES-GCM ciphertext block analysis ===
+ No repeated 16-byte ciphertext blocks detected ù secure.

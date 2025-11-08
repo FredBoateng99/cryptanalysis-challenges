@@ -1,0 +1,16 @@
+Wrote secure file: fixed/fixed_email_aesgcm.bin
+ - salt (16 bytes) and nonce (12 bytes) are stored with the file.
+ - tag (16 bytes) is stored with the file for authenticity verification.
+ - KDF iterations (demo): 10000
+
+Successfully decrypted file with correct passphrase.
+
+=== Recovered plaintext (len=176 bytes) ===
+Non-text bytes or decode error. Showing safe representations:
+b'From: alice@example.com\nTo:   bob@example.com\nSubj: Monthly Billing\n\nITEM: SUBSCRIBER  ITEM: SUBSCRIBER  ITEM: SUBSCRIBER  AMT:   $0100.00   NOTE: PLEASE PAY   ACCOUNT-REF:\xb3\xaa\xaf\xa3'
+
+Hex preview (first 160 bytes):
+46726f6d3a20616c696365406578616d706c652e636f6d0a546f3a202020626f62406578616d706c652e636f6d0a5375626a3a204d6f6e74686c792042696c6c696e670a0a4954454d3a205355425343524942455220204954454d3a205355425343524942455220204954454d3a20535542534352494245522020414d543a20202024303130302e30302020204e4f54453a20504c4541534520504159202020
+=== end Recovered plaintext ===
+
+As expected, wrong passphrase failed to decrypt/verify (GCM tag mismatch).
